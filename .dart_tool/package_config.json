@@ -98,12 +98,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "carousel_slider",
-      "rootUri": "file:///Users/lintangkusuma/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/carousel_slider-4.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "characters",
       "rootUri": "file:///Users/lintangkusuma/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.1.0",
       "packageUri": "lib/",
@@ -190,18 +184,6 @@
     {
       "name": "dartz",
       "rootUri": "file:///Users/lintangkusuma/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/dartz-0.10.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "dio",
-      "rootUri": "file:///Users/lintangkusuma/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "equatable",
-      "rootUri": "file:///Users/lintangkusuma/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -304,12 +286,6 @@
     {
       "name": "flutter_screenutil",
       "rootUri": "file:///Users/lintangkusuma/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_screenutil-5.0.0+2",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "flutter_staggered_grid_view",
-      "rootUri": "file:///Users/lintangkusuma/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_staggered_grid_view-0.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -758,7 +734,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-09-02T08:02:19.705047Z",
+  "generated": "2021-09-02T14:01:58.750390Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }

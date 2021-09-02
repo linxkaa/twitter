@@ -1,20 +1,18 @@
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
 import 'package:twitter/domain/core/failure/app_failure.dart';
-import 'package:twitter/infrastructure/data_sources/auth_data_sources.dart';
 import 'package:twitter/infrastructure/data_sources/firebase_data_sources.dart';
 import 'package:twitter/infrastructure/dtos/user_model.dart';
 
 @injectable
 class AuthRepositories {
   final FirebaseDataSource _dataSources;
-  final AuthDataSources _authDataSources;
 
-  AuthRepositories(this._dataSources, this._authDataSources);
+  AuthRepositories(this._dataSources);
 
   Future<Either<AppFailure, Unit>> loginWithSocial() async {
     try {
-      await _authDataSources.signInWithGoogle();
+      await _dataSources.signInWithGoogle();
 
       return right(unit);
     } catch (e) {

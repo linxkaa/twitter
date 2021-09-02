@@ -18,7 +18,6 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     WidgetsFlutterBinding.ensureInitialized();
     context.read<AuthBloc>().add(AuthEvent.initial());
-
     super.initState();
   }
 

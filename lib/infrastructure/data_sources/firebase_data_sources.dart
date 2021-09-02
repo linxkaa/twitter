@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:injectable/injectable.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:twitter/domain/core/constant/variable_constnt.dart';
@@ -25,6 +26,7 @@ class FirebaseDataSource {
     }
   }
 
+  // * Auth Related
   Future<void> registerManual({
     required String email,
     required String pwd,
@@ -42,9 +44,8 @@ class FirebaseDataSource {
         firebaseFirestore.collection(VarConst.userCollection).doc(signedInUser.uid).set({
           "name": name,
           "email": email,
-          "profilePicture":
-              "https://www.pngkit.com/png/detail/176-1768859_myeong-hwan-yoo-unknown-profile-picture-png.png",
-          "bgImage": "https://wallpaperaccess.com/full/632900.jpg",
+          "profilePicture": VarConst.profilePicture,
+          "bgImage": VarConst.bgImageUserProfile,
         });
         await signedInUser.updateDisplayName(name);
       } else {
@@ -57,6 +58,76 @@ class FirebaseDataSource {
     }
   }
 
+  Future<void> signInWithGoogle() async {
+    try {
+      final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+
+      if (googleUser != null) {
+        final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+        OAuthCredential credential = GoogleAuthProvider.credential(
+          accessToken: googleAuth.accessToken,
+          idToken: googleAuth.idToken,
+        );
+        UserCredential userCred = await FirebaseAuth.instance.signInWithCredential(credential);
+        if (userCred.user != null) {
+          firebaseFirestore.collection(VarConst.userCollection).doc(userCred.user!.uid).set({
+            "name": userCred.user!.displayName,
+            "email": userCred.user!.email,
+            "profilePicture": VarConst.profilePicture,
+            "bgImage": VarConst.bgImageUserProfile,
+          });
+          return;
+        }
+      } else {
+        throw ServerException(message: "User has cancelled google sign in.");
+      }
+    } catch (e) {
+      throw ServerException(message: e.toString());
+    }
+  }
+
+  Future<void> loginManual({
+    required String email,
+    required String pwd,
+  }) async {
+    try {
+      UserCredential userCredential = await firebaseAuth.signInWithEmailAndPassword(
+        email: email,
+        password: pwd,
+      );
+
+      User? signedInUser = userCredential.user;
+
+      if (signedInUser == null) {
+        throw ServerException(message: "Something wrong, please report this to us");
+      }
+      return;
+    } on FirebaseAuthException catch (e) {
+      throw ServerException(message: e.message);
+    } catch (e) {
+      throw UnknownException(e);
+    }
+  }
+
+  Future<UserModel> checkUserLoggedIn() async {
+    User? currentUser = firebaseAuth.currentUser;
+
+    if (currentUser != null) {
+      return UserModel(
+        name: currentUser.displayName ?? "",
+        token: currentUser.uid,
+        email: currentUser.email ?? "",
+      );
+    } else {
+      throw ServerException(message: "No user found");
+    }
+  }
+
+  Future<void> signOut() async {
+    await FirebaseAuth.instance.signOut();
+  }
+
+  // * Tweets Related
   Future<void> sendTweet({
     required String userId,
     required String email,
@@ -138,44 +209,15 @@ class FirebaseDataSource {
     );
   }
 
-  Future<void> loginManual({
-    required String email,
-    required String pwd,
-  }) async {
+  // * User Profile
+
+  Future<FirebaseUserModel> getUserProfile(String id) async {
     try {
-      UserCredential userCredential = await firebaseAuth.signInWithEmailAndPassword(
-        email: email,
-        password: pwd,
-      );
-
-      User? signedInUser = userCredential.user;
-
-      if (signedInUser == null) {
-        throw ServerException(message: "Something wrong, please report this to us");
-      }
-      return;
-    } on FirebaseAuthException catch (e) {
-      throw ServerException(message: e.message);
+      DocumentSnapshot response = await firebaseFirestore.collection(VarConst.userCollection).doc(id).get();
+      var mod = FirebaseUserModel.fromDoc(response);
+      return mod;
     } catch (e) {
-      throw UnknownException(e);
+      throw ServerException(message: e.toString());
     }
-  }
-
-  Future<UserModel> checkUserLoggedIn() async {
-    User? currentUser = firebaseAuth.currentUser;
-
-    if (currentUser != null) {
-      return UserModel(
-        name: currentUser.displayName ?? "",
-        token: currentUser.uid,
-        email: currentUser.email ?? "",
-      );
-    } else {
-      throw ServerException(message: "No user found");
-    }
-  }
-
-  Future<void> signOut() async {
-    await FirebaseAuth.instance.signOut();
   }
 }

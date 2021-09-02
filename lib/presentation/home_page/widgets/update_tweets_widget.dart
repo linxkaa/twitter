@@ -27,10 +27,8 @@ class UpdateNewTweetsWidget extends StatelessWidget {
           builder: (context) {
             return BlocListener<UpdateTweetBloc, UpdateTweetState>(
               listener: (context, state) {
-                if (state.isInputError.isNotEmpty) {
-                  UIHelper.showToast(state.isInputError);
-                } else {
-                  state.failureOrSucceedUpdateTweet.fold(
+                state.isAnyError.fold(
+                  () => state.failureOrSucceedUpdateTweet.fold(
                     () => null,
                     (failureOrSucceed) => failureOrSucceed.fold(
                       (failure) => UIHelper.showToast(
@@ -41,8 +39,9 @@ class UpdateNewTweetsWidget extends StatelessWidget {
                       ),
                       (_) => AutoRouter.of(context).pop(),
                     ),
-                  );
-                }
+                  ),
+                  (errorMsg) => UIHelper.showToast(errorMsg),
+                );
               },
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
