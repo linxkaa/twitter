@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/lintangkusuma/Lintang/Proyek/twitter/build/google_sign_in/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/lintangkusuma/.gradle/caches/transforms-3/1140038ef79d4c34c2bb630ac7326735/transformed/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/lintangkusuma/Lintang/Proyek/twitter/build/google_sign_in/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/lintangkusuma/.gradle/caches/transforms-3/1140038ef79d4c34c2bb630ac7326735/transformed/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/lintangkusuma/Lintang/Proyek/twitter/build/google_sign_in/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/lintangkusuma/.gradle/caches/transforms-3/1140038ef79d4c34c2bb630ac7326735/transformed/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_tint.xml"
+    }
+]

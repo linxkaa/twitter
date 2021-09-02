@@ -1,0 +1,331 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.twitter"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[:firebase_analytics] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+15-->[:firebase_analytics] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[:firebase_analytics] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-68
+16-->[:firebase_analytics] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-65
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:26:5-110
+17-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:26:22-107
+18
+19    <application
+19-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:3:4-40:19
+20        android:name="androidx.multidex.MultiDexApplication"
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.1.0] /Users/lintangkusuma/.gradle/caches/transforms-3/53fc32f1294c6e7f605ec9044038c668/transformed/core-1.1.0/AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:5:9-43
+24        android:label="twitter" >
+24-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:4:9-32
+25        <activity
+25-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:6:9-34:20
+26            android:name="com.example.twitter.MainActivity"
+26-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:7:13-41
+27            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+27-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:10:13-163
+28            android:hardwareAccelerated="true"
+28-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:11:13-47
+29            android:launchMode="singleTop"
+29-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:8:13-43
+30            android:theme="@style/LaunchTheme"
+30-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:9:13-47
+31            android:windowSoftInputMode="adjustResize" >
+31-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:12:13-55
+32
+33            <!--
+34                 Specifies an Android theme to apply to this Activity as soon as
+35                 the Android process has started. This theme is visible to the user
+36                 while the Flutter UI initializes. After that, this theme continues
+37                 to determine the Window background behind the Flutter UI.
+38            -->
+39            <meta-data
+39-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:17:13-20:17
+40                android:name="io.flutter.embedding.android.NormalTheme"
+40-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:18:15-70
+41                android:resource="@style/NormalTheme" />
+41-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:19:15-52
+42            <!--
+43                 Displays an Android View that continues showing the launch screen
+44                 Drawable until Flutter paints its first frame, then this splash
+45                 screen fades out. A splash screen is useful to avoid any visual
+46                 gap between the end of Android's launch screen and the painting of
+47                 Flutter's first frame.
+48            -->
+49            <meta-data
+49-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:26:13-29:17
+50                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+50-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:27:15-79
+51                android:resource="@drawable/launch_background" />
+51-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:28:15-61
+52
+53            <intent-filter>
+53-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:30:13-33:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:31:17-68
+54-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:31:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:32:17-76
+56-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:32:27-74
+57            </intent-filter>
+58        </activity>
+59        <!--
+60             Don't delete the meta-data below.
+61             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+62        -->
+63        <meta-data
+63-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:37:9-39:33
+64            android:name="flutterEmbedding"
+64-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:38:13-44
+65            android:value="2" />
+65-->/Users/lintangkusuma/Lintang/Proyek/twitter/android/app/src/main/AndroidManifest.xml:39:13-30
+66
+67        <service
+67-->[:firebase_analytics] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-16:19
+68            android:name="com.google.firebase.components.ComponentDiscoveryService"
+68-->[:firebase_analytics] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:12:18-89
+69            android:directBootAware="true"
+69-->[com.google.firebase:firebase-common:20.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/ff3b4fa3e6b38f04440c4cf73e5672b1/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+70            android:exported="false" >
+70-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:76:13-37
+71            <meta-data
+71-->[:firebase_analytics] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:85
+72                android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar"
+72-->[:firebase_analytics] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-127
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[:firebase_analytics] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-82
+74            <meta-data
+74-->[:firebase_auth] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+75                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+75-->[:firebase_auth] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[:firebase_auth] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+77            <meta-data
+77-->[:cloud_firestore] /Users/lintangkusuma/Lintang/Proyek/twitter/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+78                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+78-->[:cloud_firestore] /Users/lintangkusuma/Lintang/Proyek/twitter/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[:cloud_firestore] /Users/lintangkusuma/Lintang/Proyek/twitter/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+80            <meta-data
+80-->[:firebase_core] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+81                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+81-->[:firebase_core] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[:firebase_core] /Users/lintangkusuma/Lintang/Proyek/twitter/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
+84                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+84-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-firestore:23.0.3] /Users/lintangkusuma/.gradle/caches/transforms-3/ab7ab802f9401a83165909e199dbb3c6/transformed/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:20:13-22:85
+87                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+87-->[com.google.firebase:firebase-firestore:23.0.3] /Users/lintangkusuma/.gradle/caches/transforms-3/ab7ab802f9401a83165909e199dbb3c6/transformed/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:21:17-111
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-firestore:23.0.3] /Users/lintangkusuma/.gradle/caches/transforms-3/ab7ab802f9401a83165909e199dbb3c6/transformed/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:22:17-82
+89            <meta-data
+89-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/7f770b6f07244482c67fd8bd4abdd47f/transformed/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:30:13-32:85
+90                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+90-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/7f770b6f07244482c67fd8bd4abdd47f/transformed/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:31:17-139
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/7f770b6f07244482c67fd8bd4abdd47f/transformed/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:32:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-installations:17.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/fec21c502c401da9bc5f475fcf7560d0/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+93                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+93-->[com.google.firebase:firebase-installations:17.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/fec21c502c401da9bc5f475fcf7560d0/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-installations:17.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/fec21c502c401da9bc5f475fcf7560d0/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+95        </service>
+96
+97        <activity
+97-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
+98            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+98-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
+99            android:excludeFromRecents="true"
+99-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
+100            android:exported="true"
+100-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
+101            android:launchMode="singleTask"
+101-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+102-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
+103            <intent-filter>
+103-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
+104                <action android:name="android.intent.action.VIEW" />
+104-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
+104-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
+105
+106                <category android:name="android.intent.category.DEFAULT" />
+106-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+106-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+107                <category android:name="android.intent.category.BROWSABLE" />
+107-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
+107-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
+108
+109                <data
+109-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
+110                    android:host="firebase.auth"
+110-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
+111                    android:path="/"
+111-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
+112                    android:scheme="genericidp" />
+112-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
+113            </intent-filter>
+114        </activity>
+115        <activity
+115-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
+116            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+116-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
+117            android:excludeFromRecents="true"
+117-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
+118            android:exported="true"
+118-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
+119            android:launchMode="singleTask"
+119-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
+120            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+120-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
+121            <intent-filter>
+121-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
+122                <action android:name="android.intent.action.VIEW" />
+122-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:17-69
+122-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:34:25-66
+123
+124                <category android:name="android.intent.category.DEFAULT" />
+124-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+124-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+125                <category android:name="android.intent.category.BROWSABLE" />
+125-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:17-78
+125-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:37:27-75
+126
+127                <data
+127-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:39:17-42:51
+128                    android:host="firebase.auth"
+128-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:40:21-49
+129                    android:path="/"
+129-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:41:21-37
+130                    android:scheme="recaptcha" />
+130-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:42:21-48
+131            </intent-filter>
+132        </activity>
+133
+134        <service
+134-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
+135            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+135-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
+136            android:enabled="true"
+136-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
+137            android:exported="false" >
+137-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
+138            <intent-filter>
+138-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
+139                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+139-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
+139-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
+140
+141                <category android:name="android.intent.category.DEFAULT" />
+141-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:17-76
+141-->[com.google.firebase:firebase-auth:21.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/ca02c66580a9d27b83e0f7543c0bface/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:36:27-73
+142            </intent-filter>
+143        </service>
+144
+145        <provider
+145-->[com.google.firebase:firebase-common:20.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/ff3b4fa3e6b38f04440c4cf73e5672b1/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+146            android:name="com.google.firebase.provider.FirebaseInitProvider"
+146-->[com.google.firebase:firebase-common:20.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/ff3b4fa3e6b38f04440c4cf73e5672b1/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+147            android:authorities="com.example.twitter.firebaseinitprovider"
+147-->[com.google.firebase:firebase-common:20.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/ff3b4fa3e6b38f04440c4cf73e5672b1/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+148            android:directBootAware="true"
+148-->[com.google.firebase:firebase-common:20.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/ff3b4fa3e6b38f04440c4cf73e5672b1/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+149            android:exported="false"
+149-->[com.google.firebase:firebase-common:20.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/ff3b4fa3e6b38f04440c4cf73e5672b1/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+150            android:initOrder="100" />
+150-->[com.google.firebase:firebase-common:20.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/ff3b4fa3e6b38f04440c4cf73e5672b1/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+151
+152        <activity
+152-->[com.google.android.gms:play-services-auth:16.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/e6c0d848140297381c7377b145d8c367/transformed/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+153            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+153-->[com.google.android.gms:play-services-auth:16.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/e6c0d848140297381c7377b145d8c367/transformed/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+154            android:excludeFromRecents="true"
+154-->[com.google.android.gms:play-services-auth:16.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/e6c0d848140297381c7377b145d8c367/transformed/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+155            android:exported="false"
+155-->[com.google.android.gms:play-services-auth:16.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/e6c0d848140297381c7377b145d8c367/transformed/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+156            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+156-->[com.google.android.gms:play-services-auth:16.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/e6c0d848140297381c7377b145d8c367/transformed/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+157        <!--
+158            Service handling Google Sign-In user revocation. For apps that do not integrate with
+159            Google Sign-In, this service will never be started.
+160        -->
+161        <service
+161-->[com.google.android.gms:play-services-auth:16.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/e6c0d848140297381c7377b145d8c367/transformed/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+162            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+162-->[com.google.android.gms:play-services-auth:16.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/e6c0d848140297381c7377b145d8c367/transformed/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+163            android:exported="true"
+163-->[com.google.android.gms:play-services-auth:16.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/e6c0d848140297381c7377b145d8c367/transformed/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+164            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+164-->[com.google.android.gms:play-services-auth:16.0.1] /Users/lintangkusuma/.gradle/caches/transforms-3/e6c0d848140297381c7377b145d8c367/transformed/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+165
+166        <activity
+166-->[com.google.android.gms:play-services-base:17.1.0] /Users/lintangkusuma/.gradle/caches/transforms-3/f2d674b6a704d1d5e698ddb0b00733b0/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+167            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+167-->[com.google.android.gms:play-services-base:17.1.0] /Users/lintangkusuma/.gradle/caches/transforms-3/f2d674b6a704d1d5e698ddb0b00733b0/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+168            android:exported="false"
+168-->[com.google.android.gms:play-services-base:17.1.0] /Users/lintangkusuma/.gradle/caches/transforms-3/f2d674b6a704d1d5e698ddb0b00733b0/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+169            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+169-->[com.google.android.gms:play-services-base:17.1.0] /Users/lintangkusuma/.gradle/caches/transforms-3/f2d674b6a704d1d5e698ddb0b00733b0/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+170
+171        <receiver
+171-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:29:9-33:20
+172            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+172-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:30:13-85
+173            android:enabled="true"
+173-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:31:13-35
+174            android:exported="false" >
+174-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:32:13-37
+175        </receiver>
+176
+177        <service
+177-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:35:9-38:40
+178            android:name="com.google.android.gms.measurement.AppMeasurementService"
+178-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:36:13-84
+179            android:enabled="true"
+179-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:37:13-35
+180            android:exported="false" />
+180-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:38:13-37
+181        <service
+181-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:39:9-43:72
+182            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+182-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:40:13-87
+183            android:enabled="true"
+183-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:41:13-35
+184            android:exported="false"
+184-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:42:13-37
+185            android:permission="android.permission.BIND_JOB_SERVICE" />
+185-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/lintangkusuma/.gradle/caches/transforms-3/efc6282b0165ea3a8fb3a44feea357a5/transformed/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:43:13-69
+186
+187        <meta-data
+187-->[com.google.android.gms:play-services-basement:17.1.0] /Users/lintangkusuma/.gradle/caches/transforms-3/8fe1a90ff0f149926e038810ac352b09/transformed/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
+188            android:name="com.google.android.gms.version"
+188-->[com.google.android.gms:play-services-basement:17.1.0] /Users/lintangkusuma/.gradle/caches/transforms-3/8fe1a90ff0f149926e038810ac352b09/transformed/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
+189            android:value="@integer/google_play_services_version" />
+189-->[com.google.android.gms:play-services-basement:17.1.0] /Users/lintangkusuma/.gradle/caches/transforms-3/8fe1a90ff0f149926e038810ac352b09/transformed/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
+190    </application>
+191
+192</manifest>

@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/example/twitter/BuildConfig.java
+ com.example.twitter.BuildConfig
+com/example/twitter/MainActivity.java
+ com.example.twitter.MainActivity
