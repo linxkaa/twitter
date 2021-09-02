@@ -35,7 +35,7 @@ class UpdateTweetBloc extends Bloc<UpdateTweetEvent, UpdateTweetState> {
       updateTweet: (e) async* {
         yield state.unmodified.copyWith(isLoading: true);
         if (tweetController.text.isEmpty) {
-          yield state.unmodified.copyWith(isInputError: "tweet cannot be empty");
+          yield state.unmodified.copyWith(isAnyError: some("tweet cannot be empty"));
         } else {
           var response = await _repositories.updateTweet(
             newMod: state.mod.copyWith(
@@ -58,7 +58,7 @@ class UpdateTweetBloc extends Bloc<UpdateTweetEvent, UpdateTweetState> {
         yield state.unmodified.copyWith(isLoading: true);
 
         if (tweetController.text.isEmpty) {
-          yield state.unmodified.copyWith(isInputError: "tweet cannot be empty");
+          yield state.unmodified.copyWith(isAnyError: some("tweet cannot be empty"));
         } else {
           var mod = TweetModel(
               content: tweetController.text, userId: e.userId, timestamp: DateTime.now(), uniqueId: Uuid().v4());

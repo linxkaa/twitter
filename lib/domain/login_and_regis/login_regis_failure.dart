@@ -8,5 +8,7 @@ class LoginRegisFailure with _$LoginRegisFailure {
   // Password
   const factory LoginRegisFailure.passwordInvalid() = _LoginRegisFailurepasswordInvalid;
   const factory LoginRegisFailure.passwordDidntMatch() = _LoginRegisFailurepasswordDidntMatch;
+
+  // Email
   const factory LoginRegisFailure.invalidEmailAddress() = _LoginRegisFailureinvalidEmailAddress;
 }

@@ -675,14 +675,14 @@ class _$UpdateTweetStateTearOff {
 
   _UpdateTweetState call(
       {required bool isLoading,
-      required String isInputError,
+      required Option<String> isAnyError,
       required Option<Either<AppFailure, Unit>> failureOrSucceedTweet,
       required Option<Either<AppFailure, Unit>> failureOrSucceedDeleteTweet,
       required Option<Either<AppFailure, Unit>> failureOrSucceedUpdateTweet,
       required TweetModel mod}) {
     return _UpdateTweetState(
       isLoading: isLoading,
-      isInputError: isInputError,
+      isAnyError: isAnyError,
       failureOrSucceedTweet: failureOrSucceedTweet,
       failureOrSucceedDeleteTweet: failureOrSucceedDeleteTweet,
       failureOrSucceedUpdateTweet: failureOrSucceedUpdateTweet,
@@ -697,7 +697,7 @@ const $UpdateTweetState = _$UpdateTweetStateTearOff();
 /// @nodoc
 mixin _$UpdateTweetState {
   bool get isLoading => throw _privateConstructorUsedError;
-  String get isInputError => throw _privateConstructorUsedError;
+  Option<String> get isAnyError => throw _privateConstructorUsedError;
   Option<Either<AppFailure, Unit>> get failureOrSucceedTweet =>
       throw _privateConstructorUsedError;
   Option<Either<AppFailure, Unit>> get failureOrSucceedDeleteTweet =>
@@ -718,7 +718,7 @@ abstract class $UpdateTweetStateCopyWith<$Res> {
       _$UpdateTweetStateCopyWithImpl<$Res>;
   $Res call(
       {bool isLoading,
-      String isInputError,
+      Option<String> isAnyError,
       Option<Either<AppFailure, Unit>> failureOrSucceedTweet,
       Option<Either<AppFailure, Unit>> failureOrSucceedDeleteTweet,
       Option<Either<AppFailure, Unit>> failureOrSucceedUpdateTweet,
@@ -739,7 +739,7 @@ class _$UpdateTweetStateCopyWithImpl<$Res>
   @override
   $Res call({
     Object? isLoading = freezed,
-    Object? isInputError = freezed,
+    Object? isAnyError = freezed,
     Object? failureOrSucceedTweet = freezed,
     Object? failureOrSucceedDeleteTweet = freezed,
     Object? failureOrSucceedUpdateTweet = freezed,
@@ -750,10 +750,10 @@ class _$UpdateTweetStateCopyWithImpl<$Res>
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
               as bool,
-      isInputError: isInputError == freezed
-          ? _value.isInputError
-          : isInputError // ignore: cast_nullable_to_non_nullable
-              as String,
+      isAnyError: isAnyError == freezed
+          ? _value.isAnyError
+          : isAnyError // ignore: cast_nullable_to_non_nullable
+              as Option<String>,
       failureOrSucceedTweet: failureOrSucceedTweet == freezed
           ? _value.failureOrSucceedTweet
           : failureOrSucceedTweet // ignore: cast_nullable_to_non_nullable
@@ -790,7 +790,7 @@ abstract class _$UpdateTweetStateCopyWith<$Res>
   @override
   $Res call(
       {bool isLoading,
-      String isInputError,
+      Option<String> isAnyError,
       Option<Either<AppFailure, Unit>> failureOrSucceedTweet,
       Option<Either<AppFailure, Unit>> failureOrSucceedDeleteTweet,
       Option<Either<AppFailure, Unit>> failureOrSucceedUpdateTweet,
@@ -814,7 +814,7 @@ class __$UpdateTweetStateCopyWithImpl<$Res>
   @override
   $Res call({
     Object? isLoading = freezed,
-    Object? isInputError = freezed,
+    Object? isAnyError = freezed,
     Object? failureOrSucceedTweet = freezed,
     Object? failureOrSucceedDeleteTweet = freezed,
     Object? failureOrSucceedUpdateTweet = freezed,
@@ -825,10 +825,10 @@ class __$UpdateTweetStateCopyWithImpl<$Res>
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
               as bool,
-      isInputError: isInputError == freezed
-          ? _value.isInputError
-          : isInputError // ignore: cast_nullable_to_non_nullable
-              as String,
+      isAnyError: isAnyError == freezed
+          ? _value.isAnyError
+          : isAnyError // ignore: cast_nullable_to_non_nullable
+              as Option<String>,
       failureOrSucceedTweet: failureOrSucceedTweet == freezed
           ? _value.failureOrSucceedTweet
           : failureOrSucceedTweet // ignore: cast_nullable_to_non_nullable
@@ -854,7 +854,7 @@ class __$UpdateTweetStateCopyWithImpl<$Res>
 class _$_UpdateTweetState extends _UpdateTweetState {
   const _$_UpdateTweetState(
       {required this.isLoading,
-      required this.isInputError,
+      required this.isAnyError,
       required this.failureOrSucceedTweet,
       required this.failureOrSucceedDeleteTweet,
       required this.failureOrSucceedUpdateTweet,
@@ -864,7 +864,7 @@ class _$_UpdateTweetState extends _UpdateTweetState {
   @override
   final bool isLoading;
   @override
-  final String isInputError;
+  final Option<String> isAnyError;
   @override
   final Option<Either<AppFailure, Unit>> failureOrSucceedTweet;
   @override
@@ -876,7 +876,7 @@ class _$_UpdateTweetState extends _UpdateTweetState {
 
   @override
   String toString() {
-    return 'UpdateTweetState(isLoading: $isLoading, isInputError: $isInputError, failureOrSucceedTweet: $failureOrSucceedTweet, failureOrSucceedDeleteTweet: $failureOrSucceedDeleteTweet, failureOrSucceedUpdateTweet: $failureOrSucceedUpdateTweet, mod: $mod)';
+    return 'UpdateTweetState(isLoading: $isLoading, isAnyError: $isAnyError, failureOrSucceedTweet: $failureOrSucceedTweet, failureOrSucceedDeleteTweet: $failureOrSucceedDeleteTweet, failureOrSucceedUpdateTweet: $failureOrSucceedUpdateTweet, mod: $mod)';
   }
 
   @override
@@ -886,9 +886,9 @@ class _$_UpdateTweetState extends _UpdateTweetState {
             (identical(other.isLoading, isLoading) ||
                 const DeepCollectionEquality()
                     .equals(other.isLoading, isLoading)) &&
-            (identical(other.isInputError, isInputError) ||
+            (identical(other.isAnyError, isAnyError) ||
                 const DeepCollectionEquality()
-                    .equals(other.isInputError, isInputError)) &&
+                    .equals(other.isAnyError, isAnyError)) &&
             (identical(other.failureOrSucceedTweet, failureOrSucceedTweet) ||
                 const DeepCollectionEquality().equals(
                     other.failureOrSucceedTweet, failureOrSucceedTweet)) &&
@@ -910,7 +910,7 @@ class _$_UpdateTweetState extends _UpdateTweetState {
   int get hashCode =>
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(isLoading) ^
-      const DeepCollectionEquality().hash(isInputError) ^
+      const DeepCollectionEquality().hash(isAnyError) ^
       const DeepCollectionEquality().hash(failureOrSucceedTweet) ^
       const DeepCollectionEquality().hash(failureOrSucceedDeleteTweet) ^
       const DeepCollectionEquality().hash(failureOrSucceedUpdateTweet) ^
@@ -925,7 +925,7 @@ class _$_UpdateTweetState extends _UpdateTweetState {
 abstract class _UpdateTweetState extends UpdateTweetState {
   const factory _UpdateTweetState(
       {required bool isLoading,
-      required String isInputError,
+      required Option<String> isAnyError,
       required Option<Either<AppFailure, Unit>> failureOrSucceedTweet,
       required Option<Either<AppFailure, Unit>> failureOrSucceedDeleteTweet,
       required Option<Either<AppFailure, Unit>> failureOrSucceedUpdateTweet,
@@ -935,7 +935,7 @@ abstract class _UpdateTweetState extends UpdateTweetState {
   @override
   bool get isLoading => throw _privateConstructorUsedError;
   @override
-  String get isInputError => throw _privateConstructorUsedError;
+  Option<String> get isAnyError => throw _privateConstructorUsedError;
   @override
   Option<Either<AppFailure, Unit>> get failureOrSucceedTweet =>
       throw _privateConstructorUsedError;

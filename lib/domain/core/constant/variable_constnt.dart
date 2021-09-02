@@ -6,7 +6,9 @@ class VarConst {
 
   static String userCollection = 'users';
   static String tweetCollection = 'tweets';
-
+  static String profilePicture =
+      "https://www.pngkit.com/png/detail/176-1768859_myeong-hwan-yoo-unknown-profile-picture-png.png";
+  static String bgImageUserProfile = "https://wallpaperaccess.com/full/632900.jpg";
   static List<BottomNavigationBarItem> navigationBarItem = [
     BottomNavigationBarItem(
       icon: Icon(Icons.home),

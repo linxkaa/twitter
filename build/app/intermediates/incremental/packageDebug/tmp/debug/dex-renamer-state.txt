@@ -1,4 +1,4 @@
-#Thu Sep 02 17:03:27 WIB 2021
+#Thu Sep 02 21:03:55 WIB 2021
 base.2=/Users/lintangkusuma/Lintang/Proyek/twitter/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
 path.2=classes3.dex
 base.1=/Users/lintangkusuma/Lintang/Proyek/twitter/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex

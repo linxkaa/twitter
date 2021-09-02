@@ -56,7 +56,7 @@ class RegisterBloc extends Bloc<RegisterEvent, RegisterState> {
     yield* event.when(
       submit: () async* {
         yield state.unmodified.copyWith(isLoading: true);
-        if (state.regisEntities.failureLoginOption.isNone()) {
+        if (state.regisEntities.failureRegisterOption.isNone()) {
           var response = await _repositories.registerManual(
             email: state.regisEntities.email,
             pwd: state.regisEntities.repeatedPassword,
