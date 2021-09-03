@@ -25,7 +25,7 @@ class LoginRegisEntities with _$LoginRegisEntities {
   Option<LoginRegisFailure> get failureRegisterOption {
     return (LoginRegisValidator.repeatPasswordFailureOption(prevPwd: password, currPwd: repeatedPassword))
         .andThen(LoginRegisValidator.validateEmailAddress(email))
-        .andThen(LoginRegisValidator.validateEmailAddress(name))
+        .andThen(LoginRegisValidator.validateifEmpty(name))
         .fold((l) => some(l), (r) => none());
   }
 

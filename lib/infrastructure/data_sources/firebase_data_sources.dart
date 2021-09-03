@@ -127,6 +127,18 @@ class FirebaseDataSource {
     await FirebaseAuth.instance.signOut();
   }
 
+  static Future<void> googleSignOut() async {
+    final GoogleSignIn googleSignIn = GoogleSignIn();
+
+    try {
+      await googleSignIn.signOut();
+    } on FirebaseAuthException catch (e) {
+      throw ServerException(message: e.message);
+    } catch (e) {
+      throw UnknownException(e);
+    }
+  }
+
   // * Tweets Related
   Future<void> sendTweet({
     required String userId,
