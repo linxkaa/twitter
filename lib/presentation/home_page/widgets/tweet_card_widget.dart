@@ -70,7 +70,7 @@ class _TweetCardWidget extends StatelessWidget {
                                         await showDialogCostum(
                                             context: context,
                                             builder: (BuildContext context) {
-                                              return UpdateNewTweetsWidget(tweet);
+                                              return AddingTweetDialog(mod: tweet);
                                             },
                                             useRootNavigator: true);
                                       } else {

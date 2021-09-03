@@ -8,7 +8,7 @@ class UpdateTweetEvent with _$UpdateTweetEvent {
     required String email,
     required String profilePicture,
   }) = _UpdateTweetEventuploadNewTweets;
-  const factory UpdateTweetEvent.initial(TweetModel mod) = _UpdateTweetEvent;
+  const factory UpdateTweetEvent.initial(TweetModel? mod) = _UpdateTweetEvent;
   const factory UpdateTweetEvent.deleteTweet(TweetModel mod) = _UpdateTweetEventdeleteTweet;
   const factory UpdateTweetEvent.updateTweet() = _UpdateTweetEventupdateTweet;
 }

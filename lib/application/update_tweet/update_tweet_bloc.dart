@@ -29,8 +29,12 @@ class UpdateTweetBloc extends Bloc<UpdateTweetEvent, UpdateTweetState> {
   ) async* {
     yield* event.map(
       initial: (e) async* {
-        tweetController.text = e.mod.content;
-        yield state.unmodified.copyWith(mod: e.mod);
+        if (e.mod == null) {
+          yield state.unmodified;
+        } else {
+          tweetController.text = e.mod!.content;
+          yield state.unmodified.copyWith(mod: e.mod!);
+        }
       },
       updateTweet: (e) async* {
         yield state.unmodified.copyWith(isLoading: true);

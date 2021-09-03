@@ -44,9 +44,13 @@ class ProfilePage extends StatelessWidget {
                       return Stack(
                         children: [
                           Container(),
-                          Image.network(state.firebaseModel.bgImage),
+                          Image.network(
+                            state.firebaseModel.bgImage,
+                            fit: BoxFit.fitHeight,
+                            height: UIHelper.mediaHeight(context, 0.4),
+                          ),
                           Positioned(
-                            top: UIHelper.setSp(500),
+                            top: UIHelper.mediaHeight(context, 0.35),
                             child: Container(
                               width: UIHelper.mediaWidth(context, 1),
                               padding: UIHelper.padSymmetric(horizontal: 20),
