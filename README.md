@@ -50,6 +50,7 @@ for social implementation (google) will be automatically registering user if the
 
 * after cloning the repository, make sure to run `flutter pub run build_runner build --delete-conflicting-outputs` first to avoid the conflict files after cloning.
 * if you wish to try the google sign-in, please contact me through email lintangkusuma04@gmail.com to input your android debug key in my `firebase` that I used for this project
+* or if you want to install the .apk manually https://drive.google.com/drive/folders/1LhM_5fVjvWvSt5jl8TZZ6CAAoTnkjsH_?usp=sharing
 
 <!-- More about features -->
 ## Features Walkthrough
