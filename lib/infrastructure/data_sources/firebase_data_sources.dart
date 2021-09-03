@@ -4,7 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:injectable/injectable.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:twitter/domain/core/constant/variable_constnt.dart';
+import 'package:twitter/domain/core/constant/variable_constant.dart';
 import 'package:twitter/infrastructure/dtos/user_all_tweets_model.dart';
 import 'package:twitter/infrastructure/dtos/user_model.dart';
 import 'package:twitter/infrastructure/helper/exceptions.dart';

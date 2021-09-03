@@ -4,7 +4,7 @@ import 'package:twitter/application/auth_bloc/auth_bloc.dart';
 import 'package:twitter/application/tweets_bloc/tweets_bloc.dart';
 import 'package:twitter/application/update_tweet/update_tweet_bloc.dart';
 import 'package:twitter/domain/core/constant/color_constant.dart';
-import 'package:twitter/domain/core/constant/variable_constnt.dart';
+import 'package:twitter/domain/core/constant/variable_constant.dart';
 import 'package:twitter/domain/core/utils/date_utils.dart';
 import 'package:twitter/domain/core/injection/injection.dart';
 import 'package:twitter/infrastructure/dtos/user_all_tweets_model.dart';

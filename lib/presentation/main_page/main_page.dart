@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:twitter/application/bottom_nav_bar_bloc/bottom_nav_bar_cubit.dart';
 import 'package:twitter/domain/core/constant/color_constant.dart';
-import 'package:twitter/domain/core/constant/variable_constnt.dart';
+import 'package:twitter/domain/core/constant/variable_constant.dart';
 import 'package:twitter/presentation/home_page/home_page.dart';
 import 'package:twitter/presentation/profile_page/profile_page.dart';
 import 'package:twitter/presentation/widgets/adding_tweet_dialog.dart';
