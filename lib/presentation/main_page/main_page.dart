@@ -1,23 +1,15 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:twitter/application/auth_bloc/auth_bloc.dart';
 import 'package:twitter/application/bottom_nav_bar_bloc/bottom_nav_bar_cubit.dart';
-import 'package:twitter/application/profile_bloc/profile_bloc.dart';
-import 'package:twitter/application/update_tweet/update_tweet_bloc.dart';
 import 'package:twitter/domain/core/constant/color_constant.dart';
 import 'package:twitter/domain/core/constant/variable_constnt.dart';
-import 'package:twitter/domain/core/injection/injection.dart';
 import 'package:twitter/presentation/home_page/home_page.dart';
 import 'package:twitter/presentation/profile_page/profile_page.dart';
+import 'package:twitter/presentation/widgets/adding_tweet_dialog.dart';
 import 'package:twitter/presentation/widgets/confirm_dialog_view.dart';
 import 'package:twitter/presentation/widgets/show_dialog_costum.dart';
-import 'package:twitter/presentation/widgets/twitter_button.dart';
-import 'package:twitter/presentation/widgets/twitter_text_form_field.dart';
 import 'package:twitter/presentation/widgets/ui_helper.dart';
-
-part 'widgets/add_new_tweets_widget.dart';
 
 class MainPage extends StatelessWidget {
   _onWillPop(BuildContext context) {
@@ -68,7 +60,7 @@ class MainPage extends StatelessWidget {
                       await showDialogCostum(
                           context: context,
                           builder: (BuildContext context) {
-                            return AddNewTweetsWidget();
+                            return AddingTweetDialog();
                           },
                           useRootNavigator: true);
                     },

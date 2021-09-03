@@ -29,7 +29,7 @@ class _$UpdateTweetEventTearOff {
     );
   }
 
-  _UpdateTweetEvent initial(TweetModel mod) {
+  _UpdateTweetEvent initial(TweetModel? mod) {
     return _UpdateTweetEvent(
       mod,
     );
@@ -56,7 +56,7 @@ mixin _$UpdateTweetEvent {
     required TResult Function(
             String userId, String name, String email, String profilePicture)
         uploadNewTweets,
-    required TResult Function(TweetModel mod) initial,
+    required TResult Function(TweetModel? mod) initial,
     required TResult Function(TweetModel mod) deleteTweet,
     required TResult Function() updateTweet,
   }) =>
@@ -66,7 +66,7 @@ mixin _$UpdateTweetEvent {
     TResult Function(
             String userId, String name, String email, String profilePicture)?
         uploadNewTweets,
-    TResult Function(TweetModel mod)? initial,
+    TResult Function(TweetModel? mod)? initial,
     TResult Function(TweetModel mod)? deleteTweet,
     TResult Function()? updateTweet,
     required TResult orElse(),
@@ -218,7 +218,7 @@ class _$_UpdateTweetEventuploadNewTweets
     required TResult Function(
             String userId, String name, String email, String profilePicture)
         uploadNewTweets,
-    required TResult Function(TweetModel mod) initial,
+    required TResult Function(TweetModel? mod) initial,
     required TResult Function(TweetModel mod) deleteTweet,
     required TResult Function() updateTweet,
   }) {
@@ -231,7 +231,7 @@ class _$_UpdateTweetEventuploadNewTweets
     TResult Function(
             String userId, String name, String email, String profilePicture)?
         uploadNewTweets,
-    TResult Function(TweetModel mod)? initial,
+    TResult Function(TweetModel? mod)? initial,
     TResult Function(TweetModel mod)? deleteTweet,
     TResult Function()? updateTweet,
     required TResult orElse(),
@@ -291,9 +291,9 @@ abstract class _$UpdateTweetEventCopyWith<$Res> {
   factory _$UpdateTweetEventCopyWith(
           _UpdateTweetEvent value, $Res Function(_UpdateTweetEvent) then) =
       __$UpdateTweetEventCopyWithImpl<$Res>;
-  $Res call({TweetModel mod});
+  $Res call({TweetModel? mod});
 
-  $TweetModelCopyWith<$Res> get mod;
+  $TweetModelCopyWith<$Res>? get mod;
 }
 
 /// @nodoc
@@ -315,13 +315,17 @@ class __$UpdateTweetEventCopyWithImpl<$Res>
       mod == freezed
           ? _value.mod
           : mod // ignore: cast_nullable_to_non_nullable
-              as TweetModel,
+              as TweetModel?,
     ));
   }
 
   @override
-  $TweetModelCopyWith<$Res> get mod {
-    return $TweetModelCopyWith<$Res>(_value.mod, (value) {
+  $TweetModelCopyWith<$Res>? get mod {
+    if (_value.mod == null) {
+      return null;
+    }
+
+    return $TweetModelCopyWith<$Res>(_value.mod!, (value) {
       return _then(_value.copyWith(mod: value));
     });
   }
@@ -333,7 +337,7 @@ class _$_UpdateTweetEvent implements _UpdateTweetEvent {
   const _$_UpdateTweetEvent(this.mod);
 
   @override
-  final TweetModel mod;
+  final TweetModel? mod;
 
   @override
   String toString() {
@@ -363,7 +367,7 @@ class _$_UpdateTweetEvent implements _UpdateTweetEvent {
     required TResult Function(
             String userId, String name, String email, String profilePicture)
         uploadNewTweets,
-    required TResult Function(TweetModel mod) initial,
+    required TResult Function(TweetModel? mod) initial,
     required TResult Function(TweetModel mod) deleteTweet,
     required TResult Function() updateTweet,
   }) {
@@ -376,7 +380,7 @@ class _$_UpdateTweetEvent implements _UpdateTweetEvent {
     TResult Function(
             String userId, String name, String email, String profilePicture)?
         uploadNewTweets,
-    TResult Function(TweetModel mod)? initial,
+    TResult Function(TweetModel? mod)? initial,
     TResult Function(TweetModel mod)? deleteTweet,
     TResult Function()? updateTweet,
     required TResult orElse(),
@@ -416,9 +420,9 @@ class _$_UpdateTweetEvent implements _UpdateTweetEvent {
 }
 
 abstract class _UpdateTweetEvent implements UpdateTweetEvent {
-  const factory _UpdateTweetEvent(TweetModel mod) = _$_UpdateTweetEvent;
+  const factory _UpdateTweetEvent(TweetModel? mod) = _$_UpdateTweetEvent;
 
-  TweetModel get mod => throw _privateConstructorUsedError;
+  TweetModel? get mod => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$UpdateTweetEventCopyWith<_UpdateTweetEvent> get copyWith =>
       throw _privateConstructorUsedError;
@@ -505,7 +509,7 @@ class _$_UpdateTweetEventdeleteTweet implements _UpdateTweetEventdeleteTweet {
     required TResult Function(
             String userId, String name, String email, String profilePicture)
         uploadNewTweets,
-    required TResult Function(TweetModel mod) initial,
+    required TResult Function(TweetModel? mod) initial,
     required TResult Function(TweetModel mod) deleteTweet,
     required TResult Function() updateTweet,
   }) {
@@ -518,7 +522,7 @@ class _$_UpdateTweetEventdeleteTweet implements _UpdateTweetEventdeleteTweet {
     TResult Function(
             String userId, String name, String email, String profilePicture)?
         uploadNewTweets,
-    TResult Function(TweetModel mod)? initial,
+    TResult Function(TweetModel? mod)? initial,
     TResult Function(TweetModel mod)? deleteTweet,
     TResult Function()? updateTweet,
     required TResult orElse(),
@@ -613,7 +617,7 @@ class _$_UpdateTweetEventupdateTweet implements _UpdateTweetEventupdateTweet {
     required TResult Function(
             String userId, String name, String email, String profilePicture)
         uploadNewTweets,
-    required TResult Function(TweetModel mod) initial,
+    required TResult Function(TweetModel? mod) initial,
     required TResult Function(TweetModel mod) deleteTweet,
     required TResult Function() updateTweet,
   }) {
@@ -626,7 +630,7 @@ class _$_UpdateTweetEventupdateTweet implements _UpdateTweetEventupdateTweet {
     TResult Function(
             String userId, String name, String email, String profilePicture)?
         uploadNewTweets,
-    TResult Function(TweetModel mod)? initial,
+    TResult Function(TweetModel? mod)? initial,
     TResult Function(TweetModel mod)? deleteTweet,
     TResult Function()? updateTweet,
     required TResult orElse(),

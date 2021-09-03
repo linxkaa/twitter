@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:twitter/domain/core/constant/color_constant.dart';
 import 'package:twitter/presentation/widgets/ui_helper.dart';
 
-class ConfirmDialogView extends StatefulWidget {
+class ConfirmDialogView extends StatelessWidget {
   final String? body;
   final VoidCallback? onTap;
   const ConfirmDialogView({
@@ -11,25 +11,6 @@ class ConfirmDialogView extends StatefulWidget {
     this.body,
     this.onTap,
   }) : super(key: key);
-
-  @override
-  _LogoutDialogState createState() => _LogoutDialogState();
-}
-
-class _LogoutDialogState extends State<ConfirmDialogView> {
-  @override
-  Widget build(BuildContext context) {
-    return NewDialog(widget: widget);
-  }
-}
-
-class NewDialog extends StatelessWidget {
-  const NewDialog({
-    Key? key,
-    required this.widget,
-  }) : super(key: key);
-
-  final ConfirmDialogView widget;
 
   @override
   Widget build(BuildContext context) {
@@ -51,11 +32,11 @@ class NewDialog extends StatelessWidget {
     );
 
     final Widget _messageWidget = Text(
-      widget.body ?? "Are you sure you want to quit?",
+      body ?? "Are you sure you want to quit?",
       style: Theme.of(context).textTheme.subtitle2!.copyWith(color: Colors.blueGrey),
     );
     return Dialog(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(UIHelper.setSp(20))),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
@@ -63,7 +44,8 @@ class NewDialog extends StatelessWidget {
               padding: UIHelper.padAll(40),
               width: double.infinity,
               decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.only(topLeft: Radius.circular(5), topRight: Radius.circular(5)),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(UIHelper.setSp(20)), topRight: Radius.circular(UIHelper.setSp(20))),
                   color: ColorConstant.primary),
               child: _headerWidget),
           UIHelper.verticalSpace(30),
@@ -84,19 +66,19 @@ class NewDialog extends StatelessWidget {
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  child: Text("Tidak", style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.blueGrey)),
+                  child: Text("No", style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.blueGrey)),
                 ),
               ),
               Container(height: UIHelper.setHeight(110), width: 0.4, color: Colors.blueGrey),
               Expanded(
                 child: MaterialButton(
                   minWidth: double.infinity,
-                  onPressed: widget.onTap ??
+                  onPressed: onTap ??
                       () {
                         SystemNavigator.pop();
                       },
                   child: Text(
-                    "Ya",
+                    "Yes",
                     style: Theme.of(context).textTheme.bodyText2!.copyWith(color: ColorConstant.primary),
                   ),
                 ),
