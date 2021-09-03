@@ -124,8 +124,12 @@ class FirebaseDataSource {
   }
 
   Future<void> signOut() async {
+    final GoogleSignIn googleSignIn = GoogleSignIn();
+
     await FirebaseAuth.instance.signOut();
-    await GoogleSignIn().disconnect();
+    if (googleSignIn.currentUser != null) {
+      await googleSignIn.signOut();
+    }
   }
 
   static Future<void> googleSignOut() async {
