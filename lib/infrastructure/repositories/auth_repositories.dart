@@ -64,6 +64,8 @@ class AuthRepositories {
   Future<Either<AppFailure, Unit>> signOut() async {
     try {
       await _dataSources.signOut();
+      await _dataSources.signInWithGoogle();
+
       return right(unit);
     } catch (e) {
       return left(AppFailure.fromServerSide(e.toString()));

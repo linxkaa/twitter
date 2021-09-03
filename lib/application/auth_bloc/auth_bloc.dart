@@ -38,9 +38,17 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       unauthenticated: () async* {
         yield state.unmodified.copyWith(isLoading: true);
         var response = await _authRepositories.signOut();
+
         await Future.delayed(Duration(seconds: 1));
         yield* response.fold((l) async* {}, (_) async* {
-          yield state.unmodified.copyWith.model(status: AuthStatus.Unauthenticated);
+          yield state.unmodified.copyWith(
+            model: UserModel(
+              name: "",
+              token: "",
+              email: "",
+              status: AuthStatus.Unauthenticated,
+            ),
+          );
         });
       },
     );
