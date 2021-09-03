@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
           needBackIcon: false,
           body: BlocBuilder<TweetsBloc, TweetsState>(
             builder: (context, state) {
-              if (state.isLoading || (state == TweetsState.initial())) {
+              if (state.isLoading) {
                 return _LoadingWidgetHomePage();
               } else if (state.mod.tweets.isNotEmpty) {
                 return SingleChildScrollView(
