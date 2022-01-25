@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:twitter/domain/core/failure/app_failure.dart';
+import 'package:twitter/domain/core/interfaces/I_auth_repositories.dart';
 import 'package:twitter/domain/login_and_regis/login_regis_entities.dart';
-import 'package:twitter/infrastructure/repositories/auth_repositories.dart';
 
 part 'login_event.dart';
 part 'login_state.dart';
@@ -15,7 +15,7 @@ part 'login_bloc.freezed.dart';
 
 @injectable
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
-  final AuthRepositories _repositories;
+  final IAuthRepositories _repositories;
 
   late TextEditingController emailController;
   late TextEditingController pwdController;

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'update_tweet_bloc.dart';
 
@@ -62,6 +63,16 @@ mixin _$UpdateTweetEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(
+            String userId, String name, String email, String profilePicture)?
+        uploadNewTweets,
+    TResult Function(TweetModel? mod)? initial,
+    TResult Function(TweetModel mod)? deleteTweet,
+    TResult Function()? updateTweet,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
             String userId, String name, String email, String profilePicture)?
@@ -79,6 +90,14 @@ mixin _$UpdateTweetEvent {
     required TResult Function(_UpdateTweetEvent value) initial,
     required TResult Function(_UpdateTweetEventdeleteTweet value) deleteTweet,
     required TResult Function(_UpdateTweetEventupdateTweet value) updateTweet,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_UpdateTweetEventuploadNewTweets value)? uploadNewTweets,
+    TResult Function(_UpdateTweetEvent value)? initial,
+    TResult Function(_UpdateTweetEventdeleteTweet value)? deleteTweet,
+    TResult Function(_UpdateTweetEventupdateTweet value)? updateTweet,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -227,6 +246,19 @@ class _$_UpdateTweetEventuploadNewTweets
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(
+            String userId, String name, String email, String profilePicture)?
+        uploadNewTweets,
+    TResult Function(TweetModel? mod)? initial,
+    TResult Function(TweetModel mod)? deleteTweet,
+    TResult Function()? updateTweet,
+  }) {
+    return uploadNewTweets?.call(userId, name, email, profilePicture);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
             String userId, String name, String email, String profilePicture)?
@@ -252,6 +284,17 @@ class _$_UpdateTweetEventuploadNewTweets
     required TResult Function(_UpdateTweetEventupdateTweet value) updateTweet,
   }) {
     return uploadNewTweets(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_UpdateTweetEventuploadNewTweets value)? uploadNewTweets,
+    TResult Function(_UpdateTweetEvent value)? initial,
+    TResult Function(_UpdateTweetEventdeleteTweet value)? deleteTweet,
+    TResult Function(_UpdateTweetEventupdateTweet value)? updateTweet,
+  }) {
+    return uploadNewTweets?.call(this);
   }
 
   @override
@@ -376,6 +419,19 @@ class _$_UpdateTweetEvent implements _UpdateTweetEvent {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(
+            String userId, String name, String email, String profilePicture)?
+        uploadNewTweets,
+    TResult Function(TweetModel? mod)? initial,
+    TResult Function(TweetModel mod)? deleteTweet,
+    TResult Function()? updateTweet,
+  }) {
+    return initial?.call(mod);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
             String userId, String name, String email, String profilePicture)?
@@ -401,6 +457,17 @@ class _$_UpdateTweetEvent implements _UpdateTweetEvent {
     required TResult Function(_UpdateTweetEventupdateTweet value) updateTweet,
   }) {
     return initial(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_UpdateTweetEventuploadNewTweets value)? uploadNewTweets,
+    TResult Function(_UpdateTweetEvent value)? initial,
+    TResult Function(_UpdateTweetEventdeleteTweet value)? deleteTweet,
+    TResult Function(_UpdateTweetEventupdateTweet value)? updateTweet,
+  }) {
+    return initial?.call(this);
   }
 
   @override
@@ -518,6 +585,19 @@ class _$_UpdateTweetEventdeleteTweet implements _UpdateTweetEventdeleteTweet {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(
+            String userId, String name, String email, String profilePicture)?
+        uploadNewTweets,
+    TResult Function(TweetModel? mod)? initial,
+    TResult Function(TweetModel mod)? deleteTweet,
+    TResult Function()? updateTweet,
+  }) {
+    return deleteTweet?.call(mod);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
             String userId, String name, String email, String profilePicture)?
@@ -543,6 +623,17 @@ class _$_UpdateTweetEventdeleteTweet implements _UpdateTweetEventdeleteTweet {
     required TResult Function(_UpdateTweetEventupdateTweet value) updateTweet,
   }) {
     return deleteTweet(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_UpdateTweetEventuploadNewTweets value)? uploadNewTweets,
+    TResult Function(_UpdateTweetEvent value)? initial,
+    TResult Function(_UpdateTweetEventdeleteTweet value)? deleteTweet,
+    TResult Function(_UpdateTweetEventupdateTweet value)? updateTweet,
+  }) {
+    return deleteTweet?.call(this);
   }
 
   @override
@@ -626,6 +717,19 @@ class _$_UpdateTweetEventupdateTweet implements _UpdateTweetEventupdateTweet {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(
+            String userId, String name, String email, String profilePicture)?
+        uploadNewTweets,
+    TResult Function(TweetModel? mod)? initial,
+    TResult Function(TweetModel mod)? deleteTweet,
+    TResult Function()? updateTweet,
+  }) {
+    return updateTweet?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
             String userId, String name, String email, String profilePicture)?
@@ -651,6 +755,17 @@ class _$_UpdateTweetEventupdateTweet implements _UpdateTweetEventupdateTweet {
     required TResult Function(_UpdateTweetEventupdateTweet value) updateTweet,
   }) {
     return updateTweet(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_UpdateTweetEventuploadNewTweets value)? uploadNewTweets,
+    TResult Function(_UpdateTweetEvent value)? initial,
+    TResult Function(_UpdateTweetEventdeleteTweet value)? deleteTweet,
+    TResult Function(_UpdateTweetEventupdateTweet value)? updateTweet,
+  }) {
+    return updateTweet?.call(this);
   }
 
   @override

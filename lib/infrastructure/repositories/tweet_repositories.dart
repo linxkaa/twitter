@@ -1,11 +1,12 @@
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
 import 'package:twitter/domain/core/failure/app_failure.dart';
+import 'package:twitter/domain/core/interfaces/i_tweet_repositories.dart';
 import 'package:twitter/infrastructure/data_sources/firebase_data_sources.dart';
 import 'package:twitter/infrastructure/dtos/user_all_tweets_model.dart';
 
-@injectable
-class TweeetRepositories {
+@LazySingleton(as: ITweetRepositories)
+class TweeetRepositories implements ITweetRepositories {
   final FirebaseDataSource _firebaseDataSource;
   TweeetRepositories(this._firebaseDataSource);
 

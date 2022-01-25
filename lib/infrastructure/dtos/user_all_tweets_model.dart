@@ -17,7 +17,7 @@ abstract class UserAllTweetsModel with _$UserAllTweetsModel {
     required String profilePicture,
   }) = _UserAllTweetsModel;
 
-  @JsonKey(ignore: true)
+  // @JsonKey(ignore: true)
   factory UserAllTweetsModel.fromFirestore(DocumentSnapshot data) {
     List? rawList = data["tweets"] as List?;
 
@@ -35,7 +35,7 @@ abstract class UserAllTweetsModel with _$UserAllTweetsModel {
       profilePicture: data["profilePicture"],
     );
   }
-  @JsonKey(ignore: true)
+  // @JsonKey(ignore: true)
   factory UserAllTweetsModel.empty() => UserAllTweetsModel(
         tweets: [],
         name: "",
@@ -54,8 +54,9 @@ abstract class TweetModel with _$TweetModel {
     required String uniqueId,
   }) = _TweetModel;
 
-  @JsonKey(ignore: true)
-  factory TweetModel.empty() => TweetModel(content: "", userId: "", timestamp: DateTime.now(), uniqueId: "");
+  // @JsonKey(ignore: true)
+  factory TweetModel.empty() =>
+      TweetModel(content: "", userId: "", timestamp: DateTime.parse("20120227T132700"), uniqueId: "");
   factory TweetModel.fromJson(Map<String, dynamic> json) => _$TweetModelFromJson(json);
 }
 

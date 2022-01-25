@@ -36,12 +36,12 @@ class _LoadingProfilePageWidget extends StatelessWidget {
                     ),
                     UIHelper.verticalSpace(50),
                     ShimmerLoading(
-                      width: UIHelper.setSp(400),
+                      width: UIHelper.setSp(200),
                       height: UIHelper.setSp(40),
                     ),
                     UIHelper.verticalSpace(50),
                     ShimmerLoading(
-                      width: UIHelper.setSp(800),
+                      width: UIHelper.setSp(400),
                       height: UIHelper.setSp(40),
                     ),
                   ],

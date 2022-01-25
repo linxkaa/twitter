@@ -16,7 +16,6 @@ class UserModel with _$UserModel {
     required String email,
     @Default(AuthStatus.Initial) AuthStatus status,
   }) = _UserModel;
-  @JsonKey(ignore: true)
   factory UserModel.empty() => UserModel(
         name: "",
         token: "",
@@ -34,7 +33,6 @@ class FirebaseUserModel with _$FirebaseUserModel {
     required String profilePicture,
   }) = _FirebaseUserModel;
 
-  @JsonKey(ignore: true)
   factory FirebaseUserModel.fromDoc(DocumentSnapshot data) {
     return FirebaseUserModel(
       name: data["name"],
@@ -43,7 +41,7 @@ class FirebaseUserModel with _$FirebaseUserModel {
       profilePicture: data["profilePicture"],
     );
   }
-  @JsonKey(ignore: true)
+
   factory FirebaseUserModel.empty() => FirebaseUserModel(
         name: "",
         email: "",

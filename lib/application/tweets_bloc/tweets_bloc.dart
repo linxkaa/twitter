@@ -4,8 +4,8 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
+import 'package:twitter/domain/core/interfaces/i_tweet_repositories.dart';
 import 'package:twitter/infrastructure/dtos/user_all_tweets_model.dart';
-import 'package:twitter/infrastructure/repositories/tweet_repositories.dart';
 
 part 'tweets_event.dart';
 part 'tweets_state.dart';
@@ -13,8 +13,8 @@ part 'tweets_bloc.freezed.dart';
 
 @injectable
 class TweetsBloc extends Bloc<TweetsEvent, TweetsState> {
-  final TweeetRepositories _repositories;
-  late StreamSubscription<UserAllTweetsModel> _tweetSubscription;
+  final ITweetRepositories _repositories;
+  StreamSubscription<UserAllTweetsModel>? _tweetSubscription;
   TweetsBloc(this._repositories) : super(TweetsState.initial());
 
   @override
@@ -25,9 +25,7 @@ class TweetsBloc extends Bloc<TweetsEvent, TweetsState> {
       initial: (e) async* {
         yield state.unmodified.copyWith(isLoading: true);
         await Future.delayed(Duration(seconds: 1));
-        _tweetSubscription = this._repositories.getUserTweets(userId: e.userId).listen((event) {
-          add(TweetsEvent.newTweetsStreamed(event));
-        });
+        _tweetSubscription = this._repositories.getUserTweets(userId: e.userId).listen((_listener));
       },
       newTweetsStreamed: (e) async* {
         yield state.unmodified.copyWith(mod: e.mod);
@@ -35,9 +33,13 @@ class TweetsBloc extends Bloc<TweetsEvent, TweetsState> {
     );
   }
 
+  _listener(event) {
+    add(TweetsEvent.newTweetsStreamed(event));
+  }
+
   @override
   Future<void> close() {
-    _tweetSubscription.cancel();
+    _tweetSubscription?.cancel();
     return super.close();
   }
 }

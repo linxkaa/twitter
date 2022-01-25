@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'login_bloc.dart';
 
@@ -51,6 +52,14 @@ mixin _$LoginEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? submit,
+    TResult Function(String val)? inputEmail,
+    TResult Function(String val)? inputPwd,
+    TResult Function()? loginWithSocial,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? submit,
     TResult Function(String val)? inputEmail,
@@ -65,6 +74,14 @@ mixin _$LoginEvent {
     required TResult Function(_LoginEventinputEmail value) inputEmail,
     required TResult Function(_LoginEventinputPwd value) inputPwd,
     required TResult Function(_LoginEventLoginWithSocial value) loginWithSocial,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Submit value)? submit,
+    TResult Function(_LoginEventinputEmail value)? inputEmail,
+    TResult Function(_LoginEventinputPwd value)? inputPwd,
+    TResult Function(_LoginEventLoginWithSocial value)? loginWithSocial,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -141,6 +158,17 @@ class _$_Submit implements _Submit {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? submit,
+    TResult Function(String val)? inputEmail,
+    TResult Function(String val)? inputPwd,
+    TResult Function()? loginWithSocial,
+  }) {
+    return submit?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? submit,
     TResult Function(String val)? inputEmail,
@@ -163,6 +191,17 @@ class _$_Submit implements _Submit {
     required TResult Function(_LoginEventLoginWithSocial value) loginWithSocial,
   }) {
     return submit(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Submit value)? submit,
+    TResult Function(_LoginEventinputEmail value)? inputEmail,
+    TResult Function(_LoginEventinputPwd value)? inputPwd,
+    TResult Function(_LoginEventLoginWithSocial value)? loginWithSocial,
+  }) {
+    return submit?.call(this);
   }
 
   @override
@@ -261,6 +300,17 @@ class _$_LoginEventinputEmail implements _LoginEventinputEmail {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? submit,
+    TResult Function(String val)? inputEmail,
+    TResult Function(String val)? inputPwd,
+    TResult Function()? loginWithSocial,
+  }) {
+    return inputEmail?.call(val);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? submit,
     TResult Function(String val)? inputEmail,
@@ -283,6 +333,17 @@ class _$_LoginEventinputEmail implements _LoginEventinputEmail {
     required TResult Function(_LoginEventLoginWithSocial value) loginWithSocial,
   }) {
     return inputEmail(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Submit value)? submit,
+    TResult Function(_LoginEventinputEmail value)? inputEmail,
+    TResult Function(_LoginEventinputPwd value)? inputPwd,
+    TResult Function(_LoginEventLoginWithSocial value)? loginWithSocial,
+  }) {
+    return inputEmail?.call(this);
   }
 
   @override
@@ -385,6 +446,17 @@ class _$_LoginEventinputPwd implements _LoginEventinputPwd {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? submit,
+    TResult Function(String val)? inputEmail,
+    TResult Function(String val)? inputPwd,
+    TResult Function()? loginWithSocial,
+  }) {
+    return inputPwd?.call(val);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? submit,
     TResult Function(String val)? inputEmail,
@@ -407,6 +479,17 @@ class _$_LoginEventinputPwd implements _LoginEventinputPwd {
     required TResult Function(_LoginEventLoginWithSocial value) loginWithSocial,
   }) {
     return inputPwd(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Submit value)? submit,
+    TResult Function(_LoginEventinputEmail value)? inputEmail,
+    TResult Function(_LoginEventinputPwd value)? inputPwd,
+    TResult Function(_LoginEventLoginWithSocial value)? loginWithSocial,
+  }) {
+    return inputPwd?.call(this);
   }
 
   @override
@@ -485,6 +568,17 @@ class _$_LoginEventLoginWithSocial implements _LoginEventLoginWithSocial {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? submit,
+    TResult Function(String val)? inputEmail,
+    TResult Function(String val)? inputPwd,
+    TResult Function()? loginWithSocial,
+  }) {
+    return loginWithSocial?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? submit,
     TResult Function(String val)? inputEmail,
@@ -507,6 +601,17 @@ class _$_LoginEventLoginWithSocial implements _LoginEventLoginWithSocial {
     required TResult Function(_LoginEventLoginWithSocial value) loginWithSocial,
   }) {
     return loginWithSocial(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Submit value)? submit,
+    TResult Function(_LoginEventinputEmail value)? inputEmail,
+    TResult Function(_LoginEventinputPwd value)? inputPwd,
+    TResult Function(_LoginEventLoginWithSocial value)? loginWithSocial,
+  }) {
+    return loginWithSocial?.call(this);
   }
 
   @override

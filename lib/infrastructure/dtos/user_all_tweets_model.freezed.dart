@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'user_all_tweets_model.dart';
 
@@ -166,7 +167,7 @@ class _$_UserAllTweetsModel implements _UserAllTweetsModel {
       required this.profilePicture});
 
   factory _$_UserAllTweetsModel.fromJson(Map<String, dynamic> json) =>
-      _$_$_UserAllTweetsModelFromJson(json);
+      _$$_UserAllTweetsModelFromJson(json);
 
   @override
   final List<TweetModel> tweets;
@@ -212,7 +213,7 @@ class _$_UserAllTweetsModel implements _UserAllTweetsModel {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_UserAllTweetsModelToJson(this);
+    return _$$_UserAllTweetsModelToJson(this);
   }
 }
 
@@ -392,7 +393,7 @@ class _$_TweetModel implements _TweetModel {
       required this.uniqueId});
 
   factory _$_TweetModel.fromJson(Map<String, dynamic> json) =>
-      _$_$_TweetModelFromJson(json);
+      _$$_TweetModelFromJson(json);
 
   @override
   final String content;
@@ -441,7 +442,7 @@ class _$_TweetModel implements _TweetModel {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_TweetModelToJson(this);
+    return _$$_TweetModelToJson(this);
   }
 }
 

@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:math';
 
 import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
@@ -7,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:twitter/domain/core/failure/app_failure.dart';
+import 'package:twitter/domain/core/interfaces/i_tweet_repositories.dart';
 import 'package:twitter/infrastructure/dtos/user_all_tweets_model.dart';
-import 'package:twitter/infrastructure/repositories/tweet_repositories.dart';
 import 'package:uuid/uuid.dart';
 
 part 'update_tweet_event.dart';
@@ -18,7 +17,7 @@ part 'update_tweet_bloc.freezed.dart';
 @injectable
 class UpdateTweetBloc extends Bloc<UpdateTweetEvent, UpdateTweetState> {
   late TextEditingController tweetController;
-  final TweeetRepositories _repositories;
+  final ITweetRepositories _repositories;
   UpdateTweetBloc(this._repositories) : super(UpdateTweetState.initial()) {
     tweetController = TextEditingController();
   }
@@ -29,12 +28,12 @@ class UpdateTweetBloc extends Bloc<UpdateTweetEvent, UpdateTweetState> {
   ) async* {
     yield* event.map(
       initial: (e) async* {
-        if (e.mod == null) {
+        yield* optionOf(e.mod).fold(() async* {
           yield state.unmodified;
-        } else {
+        }, (mod) async* {
           tweetController.text = e.mod!.content;
           yield state.unmodified.copyWith(mod: e.mod!);
-        }
+        });
       },
       updateTweet: (e) async* {
         yield state.unmodified.copyWith(isLoading: true);

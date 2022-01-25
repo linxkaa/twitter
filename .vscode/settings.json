@@ -6,7 +6,8 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/*.freezed.dart": true,
-    "**/*.g.dart": true
+    "**/*.g.dart": true,
+    "**/*.mocks.dart": true
   },
   "explorerExclude.backup": null
 }

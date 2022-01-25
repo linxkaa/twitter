@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'register_bloc.dart';
 
@@ -60,6 +61,15 @@ mixin _$RegisterEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? submit,
+    TResult Function(String val)? inputEmail,
+    TResult Function(String val)? inputPwd,
+    TResult Function(String val)? repeatPwd,
+    TResult Function(String val)? inputName,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? submit,
     TResult Function(String val)? inputEmail,
@@ -76,6 +86,15 @@ mixin _$RegisterEvent {
     required TResult Function(_RegisterEventinputPwd value) inputPwd,
     required TResult Function(_RegisterEventrepeatPwd value) repeatPwd,
     required TResult Function(_RegisterEventinputName value) inputName,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Submit value)? submit,
+    TResult Function(_RegisterEventinputEmail value)? inputEmail,
+    TResult Function(_RegisterEventinputPwd value)? inputPwd,
+    TResult Function(_RegisterEventrepeatPwd value)? repeatPwd,
+    TResult Function(_RegisterEventinputName value)? inputName,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -155,6 +174,18 @@ class _$_Submit implements _Submit {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? submit,
+    TResult Function(String val)? inputEmail,
+    TResult Function(String val)? inputPwd,
+    TResult Function(String val)? repeatPwd,
+    TResult Function(String val)? inputName,
+  }) {
+    return submit?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? submit,
     TResult Function(String val)? inputEmail,
@@ -179,6 +210,18 @@ class _$_Submit implements _Submit {
     required TResult Function(_RegisterEventinputName value) inputName,
   }) {
     return submit(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Submit value)? submit,
+    TResult Function(_RegisterEventinputEmail value)? inputEmail,
+    TResult Function(_RegisterEventinputPwd value)? inputPwd,
+    TResult Function(_RegisterEventrepeatPwd value)? repeatPwd,
+    TResult Function(_RegisterEventinputName value)? inputName,
+  }) {
+    return submit?.call(this);
   }
 
   @override
@@ -280,6 +323,18 @@ class _$_RegisterEventinputEmail implements _RegisterEventinputEmail {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? submit,
+    TResult Function(String val)? inputEmail,
+    TResult Function(String val)? inputPwd,
+    TResult Function(String val)? repeatPwd,
+    TResult Function(String val)? inputName,
+  }) {
+    return inputEmail?.call(val);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? submit,
     TResult Function(String val)? inputEmail,
@@ -304,6 +359,18 @@ class _$_RegisterEventinputEmail implements _RegisterEventinputEmail {
     required TResult Function(_RegisterEventinputName value) inputName,
   }) {
     return inputEmail(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Submit value)? submit,
+    TResult Function(_RegisterEventinputEmail value)? inputEmail,
+    TResult Function(_RegisterEventinputPwd value)? inputPwd,
+    TResult Function(_RegisterEventrepeatPwd value)? repeatPwd,
+    TResult Function(_RegisterEventinputName value)? inputName,
+  }) {
+    return inputEmail?.call(this);
   }
 
   @override
@@ -410,6 +477,18 @@ class _$_RegisterEventinputPwd implements _RegisterEventinputPwd {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? submit,
+    TResult Function(String val)? inputEmail,
+    TResult Function(String val)? inputPwd,
+    TResult Function(String val)? repeatPwd,
+    TResult Function(String val)? inputName,
+  }) {
+    return inputPwd?.call(val);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? submit,
     TResult Function(String val)? inputEmail,
@@ -434,6 +513,18 @@ class _$_RegisterEventinputPwd implements _RegisterEventinputPwd {
     required TResult Function(_RegisterEventinputName value) inputName,
   }) {
     return inputPwd(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Submit value)? submit,
+    TResult Function(_RegisterEventinputEmail value)? inputEmail,
+    TResult Function(_RegisterEventinputPwd value)? inputPwd,
+    TResult Function(_RegisterEventrepeatPwd value)? repeatPwd,
+    TResult Function(_RegisterEventinputName value)? inputName,
+  }) {
+    return inputPwd?.call(this);
   }
 
   @override
@@ -539,6 +630,18 @@ class _$_RegisterEventrepeatPwd implements _RegisterEventrepeatPwd {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? submit,
+    TResult Function(String val)? inputEmail,
+    TResult Function(String val)? inputPwd,
+    TResult Function(String val)? repeatPwd,
+    TResult Function(String val)? inputName,
+  }) {
+    return repeatPwd?.call(val);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? submit,
     TResult Function(String val)? inputEmail,
@@ -563,6 +666,18 @@ class _$_RegisterEventrepeatPwd implements _RegisterEventrepeatPwd {
     required TResult Function(_RegisterEventinputName value) inputName,
   }) {
     return repeatPwd(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Submit value)? submit,
+    TResult Function(_RegisterEventinputEmail value)? inputEmail,
+    TResult Function(_RegisterEventinputPwd value)? inputPwd,
+    TResult Function(_RegisterEventrepeatPwd value)? repeatPwd,
+    TResult Function(_RegisterEventinputName value)? inputName,
+  }) {
+    return repeatPwd?.call(this);
   }
 
   @override
@@ -668,6 +783,18 @@ class _$_RegisterEventinputName implements _RegisterEventinputName {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? submit,
+    TResult Function(String val)? inputEmail,
+    TResult Function(String val)? inputPwd,
+    TResult Function(String val)? repeatPwd,
+    TResult Function(String val)? inputName,
+  }) {
+    return inputName?.call(val);
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? submit,
     TResult Function(String val)? inputEmail,
@@ -692,6 +819,18 @@ class _$_RegisterEventinputName implements _RegisterEventinputName {
     required TResult Function(_RegisterEventinputName value) inputName,
   }) {
     return inputName(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Submit value)? submit,
+    TResult Function(_RegisterEventinputEmail value)? inputEmail,
+    TResult Function(_RegisterEventinputPwd value)? inputPwd,
+    TResult Function(_RegisterEventrepeatPwd value)? repeatPwd,
+    TResult Function(_RegisterEventinputName value)? inputName,
+  }) {
+    return inputName?.call(this);
   }
 
   @override

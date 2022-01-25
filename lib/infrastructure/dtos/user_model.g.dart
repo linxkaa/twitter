@@ -6,17 +6,15 @@ part of 'user_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UserModel _$_$_UserModelFromJson(Map<String, dynamic> json) {
-  return _$_UserModel(
-    name: json['name'] as String,
-    token: json['token'] as String,
-    email: json['email'] as String,
-    status: _$enumDecodeNullable(_$AuthStatusEnumMap, json['status']) ??
-        AuthStatus.Initial,
-  );
-}
+_$_UserModel _$$_UserModelFromJson(Map<String, dynamic> json) => _$_UserModel(
+      name: json['name'] as String,
+      token: json['token'] as String,
+      email: json['email'] as String,
+      status: _$enumDecodeNullable(_$AuthStatusEnumMap, json['status']) ??
+          AuthStatus.Initial,
+    );
 
-Map<String, dynamic> _$_$_UserModelToJson(_$_UserModel instance) =>
+Map<String, dynamic> _$$_UserModelToJson(_$_UserModel instance) =>
     <String, dynamic>{
       'name': instance.name,
       'token': instance.token,
@@ -67,16 +65,15 @@ const _$AuthStatusEnumMap = {
   AuthStatus.Unauthenticated: 'Unauthenticated',
 };
 
-_$_FirebaseUserModel _$_$_FirebaseUserModelFromJson(Map<String, dynamic> json) {
-  return _$_FirebaseUserModel(
-    name: json['name'] as String,
-    email: json['email'] as String,
-    bgImage: json['bgImage'] as String,
-    profilePicture: json['profilePicture'] as String,
-  );
-}
+_$_FirebaseUserModel _$$_FirebaseUserModelFromJson(Map<String, dynamic> json) =>
+    _$_FirebaseUserModel(
+      name: json['name'] as String,
+      email: json['email'] as String,
+      bgImage: json['bgImage'] as String,
+      profilePicture: json['profilePicture'] as String,
+    );
 
-Map<String, dynamic> _$_$_FirebaseUserModelToJson(
+Map<String, dynamic> _$$_FirebaseUserModelToJson(
         _$_FirebaseUserModel instance) =>
     <String, dynamic>{
       'name': instance.name,
