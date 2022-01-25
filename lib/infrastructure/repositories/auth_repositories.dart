@@ -1,11 +1,12 @@
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
 import 'package:twitter/domain/core/failure/app_failure.dart';
+import 'package:twitter/domain/core/interfaces/I_auth_repositories.dart';
 import 'package:twitter/infrastructure/data_sources/firebase_data_sources.dart';
 import 'package:twitter/infrastructure/dtos/user_model.dart';
 
-@injectable
-class AuthRepositories {
+@LazySingleton(as: IAuthRepositories)
+class AuthRepositories implements IAuthRepositories {
   final FirebaseDataSource _dataSources;
 
   AuthRepositories(this._dataSources);

@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'user_model.dart';
 
@@ -153,7 +154,7 @@ class _$_UserModel implements _UserModel {
       this.status = AuthStatus.Initial});
 
   factory _$_UserModel.fromJson(Map<String, dynamic> json) =>
-      _$_$_UserModelFromJson(json);
+      _$$_UserModelFromJson(json);
 
   @override
   final String name;
@@ -199,7 +200,7 @@ class _$_UserModel implements _UserModel {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_UserModelToJson(this);
+    return _$$_UserModelToJson(this);
   }
 }
 
@@ -373,7 +374,7 @@ class _$_FirebaseUserModel implements _FirebaseUserModel {
       required this.profilePicture});
 
   factory _$_FirebaseUserModel.fromJson(Map<String, dynamic> json) =>
-      _$_$_FirebaseUserModelFromJson(json);
+      _$$_FirebaseUserModelFromJson(json);
 
   @override
   final String name;
@@ -420,7 +421,7 @@ class _$_FirebaseUserModel implements _FirebaseUserModel {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_FirebaseUserModelToJson(this);
+    return _$$_FirebaseUserModelToJson(this);
   }
 }
 

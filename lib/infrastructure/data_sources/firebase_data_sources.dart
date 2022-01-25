@@ -14,8 +14,6 @@ class FirebaseDataSource {
   late final FirebaseFirestore firebaseFirestore;
   late final FirebaseAuth firebaseAuth;
 
-  FirebaseDataSource();
-
   Future<void> initialize() async {
     try {
       await Firebase.initializeApp();

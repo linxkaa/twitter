@@ -5,16 +5,15 @@ import 'package:dartz/dartz.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:twitter/domain/core/failure/app_failure.dart';
+import 'package:twitter/domain/core/interfaces/I_auth_repositories.dart';
 import 'package:twitter/infrastructure/dtos/user_model.dart';
-import 'package:twitter/infrastructure/repositories/auth_repositories.dart';
-
 part 'auth_event.dart';
 part 'auth_state.dart';
 part 'auth_bloc.freezed.dart';
 
 @injectable
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
-  final AuthRepositories _authRepositories;
+  final IAuthRepositories _authRepositories;
   AuthBloc(
     this._authRepositories,
   ) : super(AuthState.initial());

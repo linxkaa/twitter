@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:twitter/domain/core/failure/app_failure.dart';
+import 'package:twitter/domain/core/interfaces/I_auth_repositories.dart';
 import 'package:twitter/domain/login_and_regis/login_regis_entities.dart';
-import 'package:twitter/infrastructure/repositories/auth_repositories.dart';
 
 part 'register_event.dart';
 part 'register_state.dart';
@@ -15,7 +15,7 @@ part 'register_bloc.freezed.dart';
 
 @injectable
 class RegisterBloc extends Bloc<RegisterEvent, RegisterState> {
-  final AuthRepositories _repositories;
+  final IAuthRepositories _repositories;
   late TextEditingController emailController;
   late TextEditingController pwdController;
   late TextEditingController repeatPwdController;

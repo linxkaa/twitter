@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'bottom_nav_bar_event.dart';
 
@@ -47,6 +48,14 @@ mixin _$BottomNavBarEvent {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? home,
+    TResult Function()? notification,
+    TResult Function()? search,
+    TResult Function()? account,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
     TResult Function()? notification,
@@ -61,6 +70,14 @@ mixin _$BottomNavBarEvent {
     required TResult Function(_Live value) notification,
     required TResult Function(_Cart value) search,
     required TResult Function(_Account value) account,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Home value)? home,
+    TResult Function(_Live value)? notification,
+    TResult Function(_Cart value)? search,
+    TResult Function(_Account value)? account,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -138,6 +155,17 @@ class _$_Home implements _Home {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? home,
+    TResult Function()? notification,
+    TResult Function()? search,
+    TResult Function()? account,
+  }) {
+    return home?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
     TResult Function()? notification,
@@ -160,6 +188,17 @@ class _$_Home implements _Home {
     required TResult Function(_Account value) account,
   }) {
     return home(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Home value)? home,
+    TResult Function(_Live value)? notification,
+    TResult Function(_Cart value)? search,
+    TResult Function(_Account value)? account,
+  }) {
+    return home?.call(this);
   }
 
   @override
@@ -229,6 +268,17 @@ class _$_Live implements _Live {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? home,
+    TResult Function()? notification,
+    TResult Function()? search,
+    TResult Function()? account,
+  }) {
+    return notification?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
     TResult Function()? notification,
@@ -251,6 +301,17 @@ class _$_Live implements _Live {
     required TResult Function(_Account value) account,
   }) {
     return notification(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Home value)? home,
+    TResult Function(_Live value)? notification,
+    TResult Function(_Cart value)? search,
+    TResult Function(_Account value)? account,
+  }) {
+    return notification?.call(this);
   }
 
   @override
@@ -320,6 +381,17 @@ class _$_Cart implements _Cart {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? home,
+    TResult Function()? notification,
+    TResult Function()? search,
+    TResult Function()? account,
+  }) {
+    return search?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
     TResult Function()? notification,
@@ -342,6 +414,17 @@ class _$_Cart implements _Cart {
     required TResult Function(_Account value) account,
   }) {
     return search(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Home value)? home,
+    TResult Function(_Live value)? notification,
+    TResult Function(_Cart value)? search,
+    TResult Function(_Account value)? account,
+  }) {
+    return search?.call(this);
   }
 
   @override
@@ -411,6 +494,17 @@ class _$_Account implements _Account {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? home,
+    TResult Function()? notification,
+    TResult Function()? search,
+    TResult Function()? account,
+  }) {
+    return account?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? home,
     TResult Function()? notification,
@@ -433,6 +527,17 @@ class _$_Account implements _Account {
     required TResult Function(_Account value) account,
   }) {
     return account(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Home value)? home,
+    TResult Function(_Live value)? notification,
+    TResult Function(_Cart value)? search,
+    TResult Function(_Account value)? account,
+  }) {
+    return account?.call(this);
   }
 
   @override

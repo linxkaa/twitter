@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'login_regis_failure.dart';
 
@@ -47,6 +48,14 @@ mixin _$LoginRegisFailure {
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? empty,
+    TResult Function()? passwordInvalid,
+    TResult Function()? passwordDidntMatch,
+    TResult Function()? invalidEmailAddress,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? empty,
     TResult Function()? passwordInvalid,
@@ -63,6 +72,16 @@ mixin _$LoginRegisFailure {
     required TResult Function(_LoginRegisFailurepasswordDidntMatch value)
         passwordDidntMatch,
     required TResult Function(_LoginRegisFailureinvalidEmailAddress value)
+        invalidEmailAddress,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_LoginRegisFailureEmpty value)? empty,
+    TResult Function(_LoginRegisFailurepasswordInvalid value)? passwordInvalid,
+    TResult Function(_LoginRegisFailurepasswordDidntMatch value)?
+        passwordDidntMatch,
+    TResult Function(_LoginRegisFailureinvalidEmailAddress value)?
         invalidEmailAddress,
   }) =>
       throw _privateConstructorUsedError;
@@ -146,6 +165,17 @@ class _$_LoginRegisFailureEmpty implements _LoginRegisFailureEmpty {
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? empty,
+    TResult Function()? passwordInvalid,
+    TResult Function()? passwordDidntMatch,
+    TResult Function()? invalidEmailAddress,
+  }) {
+    return empty?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? empty,
     TResult Function()? passwordInvalid,
@@ -171,6 +201,19 @@ class _$_LoginRegisFailureEmpty implements _LoginRegisFailureEmpty {
         invalidEmailAddress,
   }) {
     return empty(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_LoginRegisFailureEmpty value)? empty,
+    TResult Function(_LoginRegisFailurepasswordInvalid value)? passwordInvalid,
+    TResult Function(_LoginRegisFailurepasswordDidntMatch value)?
+        passwordDidntMatch,
+    TResult Function(_LoginRegisFailureinvalidEmailAddress value)?
+        invalidEmailAddress,
+  }) {
+    return empty?.call(this);
   }
 
   @override
@@ -250,6 +293,17 @@ class _$_LoginRegisFailurepasswordInvalid
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? empty,
+    TResult Function()? passwordInvalid,
+    TResult Function()? passwordDidntMatch,
+    TResult Function()? invalidEmailAddress,
+  }) {
+    return passwordInvalid?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? empty,
     TResult Function()? passwordInvalid,
@@ -275,6 +329,19 @@ class _$_LoginRegisFailurepasswordInvalid
         invalidEmailAddress,
   }) {
     return passwordInvalid(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_LoginRegisFailureEmpty value)? empty,
+    TResult Function(_LoginRegisFailurepasswordInvalid value)? passwordInvalid,
+    TResult Function(_LoginRegisFailurepasswordDidntMatch value)?
+        passwordDidntMatch,
+    TResult Function(_LoginRegisFailureinvalidEmailAddress value)?
+        invalidEmailAddress,
+  }) {
+    return passwordInvalid?.call(this);
   }
 
   @override
@@ -355,6 +422,17 @@ class _$_LoginRegisFailurepasswordDidntMatch
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? empty,
+    TResult Function()? passwordInvalid,
+    TResult Function()? passwordDidntMatch,
+    TResult Function()? invalidEmailAddress,
+  }) {
+    return passwordDidntMatch?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? empty,
     TResult Function()? passwordInvalid,
@@ -380,6 +458,19 @@ class _$_LoginRegisFailurepasswordDidntMatch
         invalidEmailAddress,
   }) {
     return passwordDidntMatch(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_LoginRegisFailureEmpty value)? empty,
+    TResult Function(_LoginRegisFailurepasswordInvalid value)? passwordInvalid,
+    TResult Function(_LoginRegisFailurepasswordDidntMatch value)?
+        passwordDidntMatch,
+    TResult Function(_LoginRegisFailureinvalidEmailAddress value)?
+        invalidEmailAddress,
+  }) {
+    return passwordDidntMatch?.call(this);
   }
 
   @override
@@ -461,6 +552,17 @@ class _$_LoginRegisFailureinvalidEmailAddress
 
   @override
   @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? empty,
+    TResult Function()? passwordInvalid,
+    TResult Function()? passwordDidntMatch,
+    TResult Function()? invalidEmailAddress,
+  }) {
+    return invalidEmailAddress?.call();
+  }
+
+  @override
+  @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? empty,
     TResult Function()? passwordInvalid,
@@ -486,6 +588,19 @@ class _$_LoginRegisFailureinvalidEmailAddress
         invalidEmailAddress,
   }) {
     return invalidEmailAddress(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_LoginRegisFailureEmpty value)? empty,
+    TResult Function(_LoginRegisFailurepasswordInvalid value)? passwordInvalid,
+    TResult Function(_LoginRegisFailurepasswordDidntMatch value)?
+        passwordDidntMatch,
+    TResult Function(_LoginRegisFailureinvalidEmailAddress value)?
+        invalidEmailAddress,
+  }) {
+    return invalidEmailAddress?.call(this);
   }
 
   @override
